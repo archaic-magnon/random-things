@@ -29,4 +29,19 @@ data_df =  pd.DataFrame(data[1:], columns=data[0])
 data_df.to_csv(file_name, index=False)
 ```
 
+## Dumping/Loading object
+
+```python
+import joblib
+
+#dumb to file
+joblib.dump(object, "file_name")
+
+#load the dump
+object = joblib.load("file_name")
+```
+
+
+
+
 
