@@ -10,5 +10,6 @@ def fun_to_run_in_parallel(i):
   return ret_object
 
 out = Parallel(n_jobs=-1)(delayed(fun_to_run_in_parallel)(i) for i in range(1000))
+#out will be list of returned object in order
 ```
 
